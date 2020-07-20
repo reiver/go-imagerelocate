@@ -18,7 +18,7 @@ func (receiver internalImage) At(x, y int) color.Color {
 }
 
 func (receiver internalImage) Bounds() image.Rectangle {
-	bounds := receiver.Bounds()
+	bounds := receiveri.img.Bounds()
 
 	bounds.Min.X += receiver.x
 	bounds.Min.Y += receiver.y
